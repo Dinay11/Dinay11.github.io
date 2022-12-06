@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dini.style.css">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>    
+    <img src="kopsuratIKMI.png" width="100%">
+    <h1 align="center">Formulir Pendaftaran Mahasiswa Baru</h1>
+    <h3>Petunjuk Pengisian</h3>
+    <ol>
+     <li>
+         Tulislah data dengan cermar, teliti dan benar
+     </li>
+     <li>
+         Isilah dengan huruf kapital
+     </li>
+     <li>
+         Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada ijazah anda
+     </li>
+    </ol>
+    <div>
+        <fieldset>
+            <br>
+                <b>PENDAFTARAN</b>
+            <br>
+            <br>
+            <br>
+            <label for="no_pendaftaran">1. Nomor Pendaftaran</label>
+            <br>
+            <input type="text" id="no_pendaftaran" name="nomor pendaftaran" placeholder="Nomor Pendaftaran">
+            <br>
+            <label for="namalengkap">2. Nama Lengkap</label>
+            <br>
+            <input type="text" id="namalengkap" name="namalengkap" placeholder="Nama Lengkap">
+            <br>
+            <label for="tgl_ujian">3. Tanggal Ujian</label>
+            <br>
+            <input type="date" id="tgl_ujian">
+            <br>
+            <label for="Jeniskelamin">4. Jenis Kelamin</label>
+            <br>
+            <input type="radio" name="jeniskelamin" value="Laki-laki">Laki-laki
+            <input type="radio" name="jeniskelamin" value="perempuan">Perempuan
+            <br>
+            <br>
+           <label for="kelas">5. Kelas</label>
+            <br>
+           <select name="kelas" id="kelas">
+               <option value="">Pilih Kelas</option>
+               <option value="kip">KIP</option>
+               <option value="reguler">Reguler</option>
+               <option value="karyawan">Karyawan</option>
+           </select>
+           <br>
+           <label for="jurusan yang di pilih">6. Jurusan/Jenjang yang dipilih</label>
+           <br>
+           <select name="Jurusan" id="Jurusan">
+               <option value="">Pilih Jurusan</option>
+               <option value="sisteminformatika">(S1) Sistem Informatika</option>
+               <option value="rekayasaperangkatlunak">(S1) Rekayasa Perangkat Lunak</option>
+               <option value="sisteminformasi">(S1) Sistem Informasi</option>
+               <option value="manajemeninformatika">(D3) Manajemen Informatika</option>
+               <option value="komputerisasiakuntansi">(D3) Komputerisasi Akuntansi</option>
+           </select>
+            <br>
+            <label for="waktukuliah">7. Waktu Kuliah</label>
+            <br>
+            <select name="waktukuliah" id="waktu_kuliah">
+                <option value="">Pilih Waktu Kuliah</option>
+                <option value="pagi">Pagi</option>
+                <option value="sore">Sore</option>
+                <option value="malam">Malam</option>
+            </select>
+            <br>
+            <label for="Ukuranjas">8.Ukuran Jas</label>
+            <br>
+            <select name="ukuranjas" id="ukuran_jas">
+                <option value="">Pilih Ukuran Jas</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extralarge">Extra Large</option>
+            </select>
+            <br>
+            <label for="sistempembayaran">Sistem Pembayaran</label>
+            <br>
+            <select name="sistempembayaran" id="sistem_pembayaran">
+                <option value="">Pilih Sistem Pembayaran</option>
+                <option value="angsuran">KIP Kuliah</option>
+                <option value="tunai">Tunai</option>
+                <option value="angsuran">Angsuran</option>
+            </select>
+        </fieldset>
+    </div>
+    <br>
+    <br>
+    <div>
+        <fieldset>
+            <br>
+                <b>DATA PRIBADI</b>
+            <br>
+            <br>
+            <br>
+            <label for="agama">6. Agama</label>
+            <br>
+            <select name="agama" id="agama">
+                <option value="">Pilih Agama</option>
+                <option value="Islam">Islam</option>
+                <option value="katolik">Katolik</option>
+                <option value="Protesta">Protesta</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+            </select>
+            <br>
+            <label for="tempatlahir">7. Tempat Lahir</label>
+            <br>
+            <input type="text" name="trmpatlahir" placeholder="Tempat Lahir">
+            <br>
+            <label for="tanggallahir"> Tanggal Lahir</label>
+            <br>
+            <input type="date">
+            <br>
+            <label class="sub-form" for="alamat">8. Alamat KTP</label>
+            <br>
+            <textarea name="alamat" placeholder="Alamat KTP"></textarea>
+            <br>
+            <label class="sub-form" for="rt/rw">RT/RW</label>
+            <br>
+            <input type="text" name="rt/rw" placeholder="RT/RW">
+            <br>
+            <label class="sub-form" for="kelurahan">Desa/Kelurahan</label>
+            <br>
+            <input type="text" name="kelurahan" placeholder="Desa/Kelurahan">
+            <br>
+            <label class="sub-form" for="kecamatan">Kecamatan</label>
+            <br>
+            <input type="text" name="kecamatan" placeholder="Kecamatan">
+            <br>
+            <label class="sub-form" for="kota/kabupaten">Kota/Kabupaten</label>
+            <br>
+            <input type="text" name="kota/kabupaten" placeholder="Kota/Kabupaten">
+            <br>
+            <label class="sub-form" for="provinsi">Provinsi</label>
+            <br>
+            <input type="text" name="provinsi" placeholder="Provinsi">
+            <br>
+            <label class="sub-form" for="Kodepos">Kode Pos</label>
+            <br>
+            <input type="text" name="kodepos" placeholder="Kode Pos">
+            <br>
+            <label for="No.tlp">9. No.Telp/No.HP</label>
+            <br>
+            <input type="text" name="No.Telp/No.HP" placeholder="No.Telp">
+            <br>
+            <label for="kewarganegaraan">10. Kewarganegaraan</label>
+            <br>
+            <input type="radio" name="kewarganegaraan" value="WNI">WNI
+            <input type="radio" name="kewarganegaraan" value="WNA">WNA
+            <br>
+            <br>
+            <label for="agama">Golongan darah</label>
+            <br>
+            <select name="GD">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</Main></option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select>
+            <br>
+            <label class="sub-form" for="nmortu/wali">11. Nama Orang tua/Wali</label>
+            <br>
+            <input type="text" name="nmortu/wali" placeholder="Nama Orang tua/Wali">
+            <br>
+            <br>
+        </fieldset>
+    </div>
+    <br>
+    <br>
+    <div>
+        <fieldset>
+            <br>
+                <b>PENDIDIKAN TERAKHIR</b>
+            <br>
+            <br>
+            <br>
+            <label for="asalsekolah">12. Asal Sekolah</label>
+            <br>
+            <input type="text" name="asalsekolah" placeholder="Asal Sekolah">
+            <br>
+            <label for="tanggallulus">Tanggal Lulus</label>
+            <br>
+            <input type="date">
+            <label for="Nomrorijazah">Nomor Ijazah</label>
+            <br>
+            <input type="text" name="nomorijazah" placeholder="Nomor Ijazah">
+            <br>
+            <label for="Jurusan">Jurusan</label>
+            <br>
+            <input type="text" name="jurusan" placeholder="Jurusan">
+            <br>
+            <br>
+        </fieldset>
+    </div>
+    <center>
+        <input type="submit" value="Submit">
+    </center>
+</body>
+</html>
