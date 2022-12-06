@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="dini.css /">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <center><h2>5 Teman Kampus</h2></center>
+      <style>
+        div {
+    display: block;
+}
+body {
+    background: rgb(192, 98, 184);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html {
+    color: -internal-root-color;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  h2 {
+    color: black;
+    font-size: 17px 13px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 15px;
+  }
+  h2:hover {
+    color: rgb(247, 247, 247);
+    letter-spacing: 2px;
+  }
+  td {
+    /* cursor: pointer; */
+    transition: .2s;
+  }
+  td:hover {
+    letter-spacing: 2px;
+    background: grey;
+  }
+      </style>
+      <table>
+        <tr>
+          <th>No</th>
+          <th class="nama_mhs">Nama</th>
+          <th class="edit_alamat">Alamat</th>
+          <th class="hapus" id="hapus__0">Aksi</th>
+        </tr>
+        <tr id="row__1">
+          <td>1</td>
+          <td class="nama_mhs">Anjar Moudy Fajria</td>
+          <td class="edit_alamat">penggung</td>
+          <td class="hapus" id="hapus__1">Edit | Hapus</td>
+        </tr>
+        <tr id="row__2">
+            <td>2</td>
+            <td class="nama_mhs">Azzahra Ayuning Lestari</td>
+            <td class="edit_alamat">Cirebon</td>
+            <td class="hapus" id="hapus__2">Edit | Hapus</td>
+          </tr>
+          <tr id="row__3">
+            <td>3</td>
+            <td class="nama_mhs">Qonita Salsabila</td>
+            <td class="edit_alamat">Cirebon</td>
+            <td class="hapus" id="hapus__3">Edit | Hapus</td>
+          </tr>
+          <tr id="row__4">
+            <td>4</td>
+            <td class="nama_mhs">Apliliana Jannatu Marwa</td>
+            <td class="edit_alamat">Cirebon</td>
+            <td class="hapus" id="hapus__4">Edit | Hapus</td>
+          </tr>
+          <tr id="row__5">
+            <td>5</td>
+            <td class="nama_mhs">Euis Fadilah</td>
+            <td class="edit_alamat">Cirebon</td>
+            <td class="hapus" id="hapus__5">Edit | Hapus</td>
+          </tr>
+      </table>
+      <script>
+        $(document).ready(function(){
+            // alert(0)
+            $('.nama_mhs').click(function(){
+                // alert(1)
+                let isi = $(this).text();
+                // alert(isi);
+                let isi2 = prompt('Yakin nih mau diubah:', isi);
+                if(!isi2) return;
+                // alert(isi2);
+                $(this).text(isi2);
+            })
+
+            $('.edit_alamat').click(function(){
+                // alert(1)
+                let isi = $(this).text();
+                // alert(isi);
+                let isi2 = prompt('Alamat akan diubah:', isi);
+                if(!isi2) return;
+                // alert(isi2);
+                $(this).text(isi2);
+            })
+
+            $('.hapus').click(function(){
+            // alert(1)
+            let yakin = confirm('Yakin nih mau menghapus?');
+            if(!yakin) return;
+
+            let id = $(this).prop('id');
+            // alert(id);
+
+            let rid = id.split('__');
+            let baris_ke = rid[1];
+
+            // alert(baris_ke);
+
+              $('#row__'+baris_ke).slideUp()
+
+            // alert('Anda yakin')
+        })
+        })
+    </script>
+</body>
+</html>
